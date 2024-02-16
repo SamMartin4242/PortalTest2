@@ -35,8 +35,8 @@
     
         const result = await response.json();
         if (response.status === 200) {
-            alert('User login successfully');
-          //window.location.href = '/dashboard.html'; // Redirect to the dashboard page
+            //alert('User login successfully');
+            window.location.href = '/dashboard.html'; // Redirect to the dashboard page
         } else {
           alert(result.message); // Display the error message as an alert
         }
