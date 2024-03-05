@@ -10,7 +10,7 @@ var myPieChart = new Chart(ctx, {
     labels: ["Direct", "Referral", "Social"],
     datasets: [{
       data: [90, 10],
-      backgroundColor: ['#962020', '#ababab'],
+      backgroundColor: ['#e53838', '#e3e6f0'],
       hoverBackgroundColor: ['#a52626', '#818181'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
@@ -47,7 +47,7 @@ var myPieChart = new Chart(ctx, {
     labels: ["Direct", "Referral", "Social"],
     datasets: [{
       data: [97, 3],
-      backgroundColor: ['#962020', '#ababab'],
+      backgroundColor: ['#e53838', '#e3e6f0'],
       hoverBackgroundColor: ['#a52626', '#818181'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
@@ -84,7 +84,7 @@ var myPieChart = new Chart(ctx, {
     labels: ["Direct", "Referral", "Social"],
     datasets: [{
       data: [95, 5],
-      backgroundColor: ['#962020', '#ababab'],
+      backgroundColor: ['#e53838', '#e3e6f0'],
       hoverBackgroundColor: ['#a52626', '#818181'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
@@ -122,7 +122,7 @@ var myPieChart = new Chart(ctx, {
     labels: ["Direct", "Referral", "Social"],
     datasets: [{
       data: [100, 0],
-      backgroundColor: ['#962020', '#ababab'],
+      backgroundColor: ['#e53838', '#e3e6f0'],
       hoverBackgroundColor: ['#a52626', '#818181'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
