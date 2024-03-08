@@ -19,6 +19,8 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="datatable.css" rel="stylesheet">
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -128,7 +130,6 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
                         <a class="collapse-item" href="facility.html">Facility</a>
                         <a class="collapse-item" href="shift.html">Shift</a>
                         <a class="collapse-item" href="facilityofftime.html">Facility Off Time</a>
@@ -146,7 +147,6 @@
                 </a>
                 <div id="collapse3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
                         <a class="collapse-item" href="machine.html">Machine</a>
                         <a class="collapse-item" href="machineconfig.html">Machine Configuration</a>
                     </div>
@@ -166,7 +166,6 @@
                 </a>
                 <div id="collapse4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
                         <a class="collapse-item" href="film.html">Film</a>
                         <a class="collapse-item" href="filmconfig.html">Film Configuration</a>
                     </div>
@@ -185,7 +184,6 @@
                 </a>
                 <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
                         <a class="collapse-item" href="recipe.html">Recipe</a>
                         <a class="collapse-item" href="recipeconfig.html">Recipe Configuration</a>
                     </div>
@@ -433,12 +431,60 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Facility</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><svg 
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" 
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                          </svg>Add Facility</a>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
+                <!-- Page Heading -->
+
+                <!-- DataTales Example -->                
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Facility Name</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                            <th># of Shifts</th>
+                            <th># of Machines</th>
+                            <th>Time Zone</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Facility Name</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                            <th># of Shifts</th>
+                            <th># of Machines</th>
+                            <th>Time Zone</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Rapid Technologies</td>
+                            <td>Central</td>
+                            <td>N/A</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>Mountain Standard Time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
 
  
             <!-- End of Main Content -->
@@ -500,6 +546,9 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="datatable.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
+
 
 </body>
 
